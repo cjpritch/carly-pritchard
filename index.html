@@ -5,8 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carly Pritchard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <h1>Under Construction</h1>
+    <!-- navbar -->
+<header>
+    <nav>
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">About Me</a>
+    </li>
+    <li>
+      <a href="#">Projects</a>
+    </li>
+    <li>
+      <a href="#">Contact Me</a>
+    </li>
+  </ul>
+    </nav> 
+</header>
+
+    <!-- hero section -->
+<section class="hero flex-row">
+    <div class="hero-content">
+        <h2>Hi, I'm Carly Pritchard.</h2>
+        <br>
+        <p>A Full-Stack Web Developer based in St. Louis, MO.</p>
+    </div>
+</section>
+
+<!-- quick links -->
+<section class="link-section">
+    <div class="flex-row">
+
+        <p class="link">
+            <a href="#">Github</a>
+        </p>
+        <p class="link">
+            <a href="#">LinkedIn</a>
+        </p>
+        <p class="link">
+            <a href="#">Resume</a>
+        </p>
+        
+    </div>
+</section>
+
+<!-- about me section-->
+<section id="about" class="about-me">
+    <div class="flex-row">
+       <h2 class="section-title primary-border">About Me</h2>
+    </div>
+    <div class="flex-row">
+      <p>
+        Some shit about me hire me hire me hire me hire me hire me hire me hire me 
+      </p>
+  </div>
+</section>
+
+<!-- projects section -->
+<section id="my-projects">
+    <div class="flex-row">
+        <h2 class="section-title primary-border">
+            Projects
+        </h2>
+    </div>
+    </section>
+    <div class="projects">
+    
+    <!-- project 1 -->
+    <article class="project">
+    <img src="./assets/images/placeholder.jpeg" alt="screenshot of PROJECT NAME" />
+    <div class="project-card">
+        <h3 class="project-name">Project 1</h3>
+        <h4 class="project-tech">Made with blah blah blah</h4>
+        <p>
+        Project description, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+        itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+        <p>
+            <a href="#">Deployment</a>
+            <br>
+            <a href="#">Github</a>
+        </p>
+    </div>
+    </article>
+    
+    <!-- project 2 -->
+    <article class="project">
+    <img src="./assets/images/placeholder.jpeg" alt="screenshot of PROJECT NAME" />
+    <div class="project-card">
+        <h3 class="project-name">Project 2</h3>
+        <h4 class="project-tech">Made with blah blah blah</h4>
+        <p>
+        Project description dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+        itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+        <p>
+            <a href="#">Deployment</a>
+            <br>
+            <a href="#">Github</a>
+        </p>
+    </div>
+    </article>
+    
+    <!-- project 3 -->
+    <article class="project">
+    <img src="./assets/images/placeholder.jpeg" alt="screenshot of PROJECT NAME" />
+    <div class="project-card">
+        <h3 class="project-name">Project 3</h3>
+        <h4 class="project-tech">Made with blah blah blah</h4>
+        <p>
+        Project description, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+        itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+        <p>
+            <a href="#">Deployment</a>
+            <br>
+            <a href="#">Github</a>
+        </p>
+    </div>
+    </article>
+    </div>
+
+    <!-- contact me -->
+<section id="contact-me" class="contact">
+    <div class="contact-form">
+        <div class="contact-info">
+        <h3>Interested in working with me? Please reach out!</h3>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="f547af49-97ef-4268-91a7-208cc8dac46b">
+
+            <label for="contact-name">Name</label>
+            <input id="contact-name" type="text" name="name" required>
+
+            <label for="contact-email">Email</label>
+            <input id="contact-email" type="email" name="email" required>
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required></textarea>
+
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</section>
+    <!-- footer -->
+<footer>
+    <div>
+        <img class="icon" src="./assets/images/github_thumbnail.png">
+        <img class="icon" src="./assets/images/linkedin_thumbnail.png">
+    </div>
+    <div>
+        <p>Carly Pritchard 2022</p>
+    </div>
+</footer>
+
 </body>
 </html>
