@@ -15,22 +15,12 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: var(--primary-color);
 }
-
-body {
-    padding:10px;
-    padding-bottom:60px;   
- }
  
-.container {
-    min-height: 100%;
-    position: relative;
-}
-
-/*/ HEADER /*/
+/* HEADER */
 header {
     padding: 20px;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -62,15 +52,13 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
 
-/*/ FOOTER /*/
+/* FOOTER */
 footer {
-    background: var(--primary-color);
     width: 100%;
     padding: 35px;
     display: flex;
@@ -94,9 +82,8 @@ section {
     padding: 10px;
 }
 
-/*/ HERO /*/
+/* HERO */
 .hero {
-    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -121,7 +108,7 @@ section {
     color: var(--secondary-color);
 }
 
-/*/ LINKS SECTION /*/
+/* LINKS SECTION */
 
 .link-section {
     width: 100%;
@@ -129,7 +116,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: var(--primary-color);
 }
 
 .link {
@@ -145,7 +131,7 @@ section {
     border: 2px solid var(--secondary-color);
     padding: 10px;
 }
-/*/ ABOUT ME /*/
+/* ABOUT ME */
 
 .about-me {
     background: var(--primary-color);
@@ -178,11 +164,7 @@ section {
     border-color: var(--secondary-color);
 }
 
-/*/ PROJECTS /*/
-
-#my-projects {
-    background: var(--primary-color);
-}
+/* PROJECTS */
 
 .projects {
     width: 100%;
@@ -193,8 +175,7 @@ section {
 }
 
 .project {
-    margin: 0 auto 20px auto;
-    background: var(--primary-color);
+    margin: auto;
     color: var(--secondary-color);
     flex: 1;
 }
@@ -222,11 +203,7 @@ section {
     font-size: 17px;
 }
 
-/*/ CONTACT SECTION /*/
-
-.contact {
-    background: var(--primary-color);
-}
+/* CONTACT SECTION */
 
 .contact-info > * {
     flex: 1;
@@ -263,7 +240,6 @@ section {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
     outline: none;
 }
 
@@ -295,4 +271,70 @@ section {
     display: flex;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
+@media screen and (max-width: 980px) {
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+header nav ul li a {
+    font-size: 20px;
+}
+
+footer P, footer div {
+    text-align: center;
+    width: 100%;
+}
+
+
+.hero-content {
+    width: 100%;
+    text-align: center;
+}
+
+.section-title {
+    width: 80%;
+}
+
+.project {
+    flex: 0 70%;
+}
+}
+  
+/* MEDIA QUERY FOR MOBILE */
+@media screen and (max-width: 575px) {
+
+.section-title {
+    width: 95%;
+}
+
+.about-me p {
+    width: 100%;
+}
+
+.project {
+    flex: 0 100%;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info > * {
+    flex: 0 100%;
+}
+
+.contact-form {
+    order: 3;
+}
+}
+  
