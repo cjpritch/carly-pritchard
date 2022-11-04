@@ -11,10 +11,10 @@
 }
 
 html, body {
+    width: 100%;
+    overflow-x: hidden;
     color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     height: 100%;
     background-color: var(--primary-color);
 }
@@ -54,11 +54,12 @@ header nav ul li a {
 header nav ul li a:hover {
     border: 2px solid var(--secondary-color);
     border-radius: 25px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 /* FOOTER */
 footer {
-    width: 100%;
     padding: 35px;
     display: flex;
     justify-content: space-between;
@@ -75,12 +76,6 @@ footer a {
 
 section {
     padding: 60px;
-}
-
-.icon {
-    max-width: 25%;
-    max-height: 25%;
-    padding: 10px;
 }
 
 /* HERO */
@@ -113,11 +108,11 @@ section {
 /* LINKS SECTION */
 
 .link-section {
-    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .link {
@@ -176,7 +171,6 @@ section {
 /* PROJECTS */
 
 .projects {
-    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -219,7 +213,6 @@ section {
 }
 
 .project a:hover {
-    text-decoration: underline;
     font-style: italic;
 }
 
@@ -288,6 +281,11 @@ form {
 .contact-form button:hover {
     color: var(--primary-color);
     background: var(--tertiary-color);
+}
+
+::placeholder {
+    font-style: italic;
+    font-weight: lighter;
 }
 
 .text-left {
@@ -367,5 +365,10 @@ footer P, footer div {
 .contact-form {
     order: 3;
 }
+
+.link {
+    flex-direction: column;
+}
+
 }
   
