@@ -358,6 +358,7 @@ footer P, footer div {
 
 .project {
     flex: 0 100%;
+    margin-bottom: 20px;
 }
 
 .contact-info {
@@ -379,6 +380,11 @@ footer P, footer div {
     border-radius: 25px;
     padding: 10px;
     margin: 5px;
+}
+
+.hero-content {
+    text-align: center;
+    justify-content: center;
 }
 }
   
