@@ -84,7 +84,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background: linear-gradient(var(--primary-color), #2D3436, var(--primary-color));
+    background: linear-gradient(var(--primary-color), #181c1c, var(--primary-color));
 }
   
 .hero-content{
@@ -184,9 +184,12 @@ section {
     align-items: stretch;
 }
 
+.project-name {
+    text-decoration: underline;
+}
+
 .project img {
     width: 100%;
-    
 }
 
 .project-card {
@@ -330,7 +333,7 @@ footer P, footer div {
 
 .hero-content {
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 
 .section-title {
@@ -365,12 +368,8 @@ footer P, footer div {
     flex: 0 100%;
 }
 
-.contact-form {
-    order: 3;
-}
-
 .link {
-    flex-direction: column;
+    margin: 10px;
 }
 
 }
