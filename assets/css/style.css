@@ -84,6 +84,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background: linear-gradient(var(--primary-color), #2D3436, var(--primary-color));
 }
   
 .hero-content{
@@ -227,6 +228,7 @@ form {
     border: 2px solid var(--secondary-color);
     border-radius: 25px;
     padding: 40px;
+    background: linear-gradient(to bottom right, var(--primary-color), #2D3436);
    
 }
 .contact-info > * {
