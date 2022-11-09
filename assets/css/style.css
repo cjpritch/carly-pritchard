@@ -386,5 +386,9 @@ footer P, footer div {
     text-align: center;
     justify-content: center;
 }
+
+.hero-content h2 {
+    font-size: 40px;
+}
 }
   
